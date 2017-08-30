@@ -4,3 +4,4 @@ theme: black
 highlight: vs
 
 
+vertical-center: false
