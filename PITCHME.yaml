@@ -1,4 +1,6 @@
 theme: black
 #highlight: Darcula
-highlight: mono-blue
+#highlight: mono-blue
+highlight: vs
+
 
