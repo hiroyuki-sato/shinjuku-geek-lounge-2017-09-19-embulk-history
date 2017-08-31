@@ -73,7 +73,20 @@ _auth.yml
 type: mysql
 user: xxx
 password: xxx
-````
+```
+
+---
+
+## その頃...
+
+* json(path)プラグインのjava化
+* embulk-filer-calc
+  * 四則演算
+* filter-null_string:
+  * ヌル変換
+* fluendの正規表現互換パーサー
+  * parser-joni_regexp
+
 
   
 ---
