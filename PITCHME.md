@@ -16,7 +16,7 @@ Hello, World!
 
 ## Test
 
-### Test2
+### 日本語
 
 * item
   * item
