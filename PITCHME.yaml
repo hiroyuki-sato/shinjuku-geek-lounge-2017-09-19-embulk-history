@@ -1,7 +1,7 @@
 theme: black
-#highlight: Darcula
+highlight: Darcula
 #highlight: mono-blue
-highlight: vs
+#highlight: vs
 
 
 vertical-center: false
