@@ -44,6 +44,36 @@ exec:
 ```
   
   
+---
+
+## 様々な要望
+
+* 設定を共通化したい。
+* Arrayやハッシュのサポート
+
+---
+
+## 様々な要望
+
+* Liquidによる設定の共通化
+* type: jsonのサポート
+
+---
+
+## Liquid
+
+```yaml
+in:
+  {% include 'auth' %}
+```
+
+_auth.yml
+
+```yaml
+type: mysql
+user: xxx
+password: xxx
+````
 
   
 ---
