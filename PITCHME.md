@@ -14,6 +14,54 @@ Hello, World!
 
 ---
 
+## fluendには難しいこと
+
+* 大量の過去データをアップロードしたい。
+* DBやストレージの移行
+  * MySQL -> PostgreSQL
+  * Local -> S3
+* 内製スクリプト
+
+---
+
+## Embulk
+
+* プラグインアーキテクチャ
+  * JRubyとJava(Scala/Kotlin)
+* 並行・並列処理
+* guess
+* リトライ・レジューム
+* yaml設定
+
+---
+
+## Embulk type
+
+| Embulk    | 説明       | Ruby      | Java 
+|-----------|------------|-----------|------
+| boolean   | 真偽値     | Boolean   | Boolean
+| long      | 整数型     | Integer   | Long
+| timestamp | 時刻       | Time      | Timestamp
+| double    | 浮動小数点 | Float     | Double 
+| string    | 文字列     | String    | String 
+
+
+---
+
+## Embulk type
+
+| Embulk    | 説明       | Ruby      | Java 
+|-----------|------------|-----------|------
+| boolean   | 真偽値     | Boolean   | Boolean
+| long      | 整数型     | Integer   | Long
+| timestamp | 時刻       | Time      | Timestamp
+| double    | 浮動小数点 | Float     | Double 
+| string    | 文字列     | String    | String 
+| json      | JSON       | *確認中*  | *確認中*
+
+
+---
+
 ## Test
 
 ### 日本語
