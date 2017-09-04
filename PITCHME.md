@@ -28,6 +28,8 @@ Hello, World!!
 
 ---?image=assets/images/EmbulkSummary.png&size=auto 70%
 
+---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
+
 ---
 
 ---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
