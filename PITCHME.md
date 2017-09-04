@@ -27,6 +27,8 @@ Hello, World!!
 ## Embulk
 
 ![](assets/images/embulk-architecture.png)
+---?image=assets/images/embulk-architecture.png&size=auto 70%
+
 
 ---
 
