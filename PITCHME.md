@@ -26,6 +26,12 @@ Hello, World!!
 
 ## Embulk
 
+![](assets/images/embulk-architecture.png)
+
+---
+
+## Embulk
+
 * プラグインアーキテクチャ
   * JRubyとJava(Scala/Kotlin)
 * 並行・並列処理
