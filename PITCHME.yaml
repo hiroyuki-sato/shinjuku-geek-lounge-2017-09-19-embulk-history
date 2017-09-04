@@ -5,4 +5,4 @@ highlight: Darcula
 
 
 vertical-center: false
-theme-override : PITCHME.css
+theme-override : assets/css/PITCHME.css
