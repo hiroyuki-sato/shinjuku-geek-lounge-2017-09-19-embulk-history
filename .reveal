@@ -1,0 +1,5 @@
+<style>
+.reveal .title-custom {
+    text-transform: lowercase;
+}  
+</style> 
