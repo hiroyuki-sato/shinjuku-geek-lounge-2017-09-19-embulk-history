@@ -22,12 +22,15 @@ Hello, World!!
   * Local -> S3
 * 内製スクリプト
 
----
-
-## Embulk
-
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
 
+---?image=assets/images/EmbulkPlugins.png&size=auto 70%
+
+---?image=assets/images/EmbulkSummary.png&size=auto 70%
+
+---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
+
+## Embulk
 
 ---
 
