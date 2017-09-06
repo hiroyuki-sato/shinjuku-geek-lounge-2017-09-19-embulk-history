@@ -32,7 +32,16 @@ Hello, World!!
 
 ---
 
-<!-- .slide: class="two-floating-elements" -->
+<style>
+.reveal .slides {
+    text-align: left;
+}
+.reveal .slides section>* {
+    margin-left: 0;
+    margin-right: 0;
+}
+</style>
+
 ---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
 
 ## Embulk
