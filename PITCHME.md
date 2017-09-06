@@ -32,9 +32,14 @@ Hello, World!!
 
 ---
 
+<!-- .slide: class="two-floating-elements" -->
 ---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
 
 ## Embulk
+
+* item
+* item 
+* item 
 
 ---
 
