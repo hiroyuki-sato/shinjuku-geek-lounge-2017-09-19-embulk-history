@@ -1,3 +1,4 @@
+/*
 .reveal .slides {
     text-align: left;
 }
@@ -5,8 +6,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+*/
 
-.reveal .title-custom {
+.reveal .slides .title-custom {
 /*    text-align: right; */
     text-transform: lowercase;
 }  
