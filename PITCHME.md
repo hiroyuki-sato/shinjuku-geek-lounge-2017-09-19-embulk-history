@@ -14,6 +14,15 @@ Hello, World!!
 
 ---
 
+## Embulk(エンバルク)
+
+* fluendの開発者が開発
+* 2015年1月リリース
+* fluentdのバッチ版
+* fluentdでは難しいことを解決するために開発
+
+---
+
 ## fluendには難しいこと
 
 * 大量の過去データをアップロードしたい。
@@ -23,6 +32,84 @@ Hello, World!!
 * 内製スクリプト
 
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
+
+---
+
+## Embulk
+
+| type      | 説明                     |
+|-----------|--------------------------|
+| input     | データの取得(file,s3)    |
+| decoder   | 圧縮ファイルの伸張(gzip) |
+| parser    | CSVデータのパース        |
+| filter    | データの加工不要行の抽出 |
+| exec      | バルクロード分散実行     |
+| formatter | データの整形(CSV)        |
+| encoder   | データの圧縮(gzip)       |
+| output    | データの出力(file,s3)    |
+
+---
+
+## YAML設定
+
+```yaml
+in:
+  type: file
+  parser: csv
+  decoders:
+  - type: gzip
+filters:
+  - type: calc
+out:
+  type: s3
+  formatter: jsonl
+  encoders:
+  - type: gzip
+exec:
+```
+  
+## Embulk type
+
+| Embulk    | 説明       | Ruby      | Java 
+|-----------|------------|-----------|------
+| boolean   | 真偽値     | Boolean   | Boolean
+| long      | 整数型     | Integer   | Long
+| timestamp | 時刻       | Time      | Timestamp
+| double    | 浮動小数点 | Float     | Double 
+| string    | 文字列     | String    | String 
+
+
+---
+
+## その頃
+
+* 2015年2月、バルクローダーが必要だった。
+* 要件
+  * 入力: apacheのログファイル
+  * 出力: PostgreSQL
+* Embulkを見つける => よさそう
+
+---
+
+## 現実
+
+* コンセプトは良かったが出たばかりだった。
+* apacheのログ => プラグインなし
+* PostgreSQLなし => プラグインなし
+* ドキュメント => Quick start 程度
+
+---
+
+## できたこと
+
+* CSVのパース
+* プラグイン
+  * embulk-plugin-redis (2015/1/27)
+  * embulk-plugin-vim (2015/1/28)
+  * embulk-plugin-input-pcapng-files (2015/1/28)
+  * embulk-output-elasticsearch (2015/2/15)
+  * embulk-input-s3 (2015/2/16)
+
 
 ---?image=assets/images/EmbulkPlugins.png&size=auto 70%
 
