@@ -71,14 +71,13 @@ exec:
   
 ## Embulk type
 
-| Embulk    | 説明       | Ruby      | Java 
-|-----------|------------|-----------|------
-| boolean   | 真偽値     | Boolean   | Boolean
-| long      | 整数型     | Integer   | Long
-| timestamp | 時刻       | Time      | Timestamp
-| double    | 浮動小数点 | Float     | Double 
-| string    | 文字列     | String    | String 
-
+| Embulk    | 説明       |
+|-----------|------------|
+| boolean   | 真偽値     |
+| long      | 整数型     |
+| timestamp | 時刻       |
+| double    | 浮動小数点 |
+| string    | 文字列     |
 
 ---
 
@@ -111,6 +110,8 @@ exec:
   * embulk-output-elasticsearch (2015/2/15)
   * embulk-input-s3 (2015/2/16)
 
+---?image=assets/images/EmbulkSummary.png&size=auto 70%
+
 ---
 
 ## Embulkのまとめ
@@ -121,11 +122,19 @@ exec:
 * まとまっている？
 * もはや検索した方が早いかも
 
+---?image=assets/images/EmbulkPlugins.png&size=auto 70%
+
+---
+
 ## Embulkプラグインのまとめ
 
 * 当初はEmbulkのまとめに掲載
 * リンクが増えたので独立
 * オフィシャルのプラグインページが公開(2015/2/26)
+
+---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
+
+---
 
 ## Embulk組み込みプラグイン覚書
 
@@ -138,22 +147,22 @@ exec:
 
 * 2015/11/10
 
----?image=assets/images/EmbulkPlugins.png&size=auto 70%
-
----?image=assets/images/EmbulkSummary.png&size=auto 70%
-
----?image=assets/images/EmbulkBuiltin.png&size=auto 70%
-
----?image=assets/images/EmbulkBuiltin.png&size=auto 70%
 
 ## 待望のDBプラグイン
 
+* embulkプロジェクトからリリース
 * embulk-input-jdbc (2015/2/16)
 * embulk-output-jdbc (2015/2/16)
 * 対応データベース
   * JDBC/MySQL/PostgreSQL/RedShift
 * mode
   * replace/insert
+
+---
+
+# 様々な人々の貢献
+
+---
 
 ## sakamaさん
 
