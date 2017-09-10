@@ -71,7 +71,6 @@ exec:
   
 ## Embulk type
 
-
 | Embulk    | 説明       |
 |-----------|------------|
 | boolean   | 真偽値     |
@@ -145,6 +144,8 @@ exec:
 * 組込プラグインの説明
 * ソースを見てドキュメント化
 
+---
+
 ## 組込コマンドヘルプまとめ
 
 * 2015/11/10
@@ -192,9 +193,9 @@ exec:
 ## civitaspoさん
 
 * JSON周りのプラグインを作成
-* embulk-filter-to_json(2016/1/22)
 * embulk-filter-flatten_json(2015/10/11)
 * embulk-filter-json_key(2015/10/29)
+* embulk-filter-to_json(2016/1/22)
 
 ---
 
@@ -222,36 +223,68 @@ exec:
 
 ---
 
-## イベント開催・RubyBizグランプリ
+## イベント開催・RubyBiz
 
 * Embulk meetup Tokyo#2(2015/12/15)
-  * 
 * RubyBiz 第一回グランプリ受賞(Fluentd/Embulk)
+* 徐々に利用事例が増える。
 
 ---
 
-## 様々な要望
+## 様々な要望と対応
 
-* 設定ファイルの共有化
+* 設定ファイルの共有化 
+  * Liquid Embulk 0.7.7 ~ (2015/10/28)
 * ArrayやHashデーターの対応
-* ワークフロー連携
+  * Embulk 0.8.0 (2016/1/13)
+* ワークフロー連携 
+  * Digdag(2016/6/15)
 
 --- 
 
 ## 設定ファイル共有化:Liquid
 
+* Embulk 0.7.7(2015/10/28)
+* 環境変数の読み込み可能に
+
+```yaml
+in: 
+{% if env.EMBULK_ENV == 'production' %}
+  {% include 'db/prod' %}
+{% else %}
+  {% include 'db/dev' %}
+{% endif %}
+{% include 'query/query' %}
+out:
+  type: stdout
+```
+
+---
+
+## 設定ファイル共有化:Liquid
+
+```yaml
+#
+  type: postgresql
+  host: 127.0.0.1
+  user: username
+  password: password
+  database: embulk_prod
+```
+
+
 ---
 
 ## Array,Hash対応:type: json
 
-| Embulk    | 説明       | Ruby      | Java 
-|-----------|------------|-----------|------
-| boolean   | 真偽値     | Boolean   | Boolean
-| long      | 整数型     | Integer   | Long
-| timestamp | 時刻       | Time      | Timestamp
-| double    | 浮動小数点 | Float     | Double 
-| string    | 文字列     | String    | String 
-| json      | JSON       | *確認中*  | *確認中*
+| Embulk    | 説明       |
+|-----------|------------|
+| boolean   | 真偽値     |
+| long      | 整数型     |
+| timestamp | 時刻       |
+| double    | 浮動小数点 |
+| string    | 文字列     |
+| json      | JSON(NEW)  |
 
 ---
 
