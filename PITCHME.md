@@ -111,6 +111,32 @@ exec:
   * embulk-output-elasticsearch (2015/2/15)
   * embulk-input-s3 (2015/2/16)
 
+---
+
+## Embulkのまとめ
+
+* Embulkのまとめ(2015/2/16)
+* Embulk関連のリンク集
+* 国内最大の情報源に
+* まとまっている？
+* もはや検索した方が早いかも
+
+## Embulkプラグインのまとめ
+
+* 当初はEmbulkのまとめに掲載
+* リンクが増えたので独立
+* オフィシャルのプラグインページが公開(2015/2/26)
+
+## Embulk組み込みプラグイン覚書
+
+* 組込プラグインの説明(2015/2/28)
+* 英訳してPR、本体のドキュメントベースに
+* 組込プラグインの説明
+* ソースを見てドキュメント化
+
+## Embulk組込コマンドヘルプまとめ
+
+* 2015/11/10
 
 ---?image=assets/images/EmbulkPlugins.png&size=auto 70%
 
@@ -120,11 +146,141 @@ exec:
 
 ---?image=assets/images/EmbulkBuiltin.png&size=auto 70%
 
-## Embulk
+## 待望のDBプラグイン
 
-* item
-* item 
-* item 
+* embulk-input-jdbc (2015/2/16)
+* embulk-output-jdbc (2015/2/16)
+* 対応データベース
+  * JDBC/MySQL/PostgreSQL/RedShift
+* mode
+  * replace/insert
+
+## sakamaさん
+
+* embulk-output-bigquery
+  * Google BigQuery用プラグイン
+  * 2015/3/17
+* 組込CSVフォーマッターの修正(2015/3/13)
+* その他
+  * sftp(input/output),azure_blob_storage等
+* そのままコミッターに
+
+---
+
+## hito4_tさん
+
+* 2015年3月頃登場
+* JDBC周りの大幅な回収
+* Oracle/SQLServerのプラグイン追加
+* そのままメンテナーに
+
+---
+
+## civitaspoさん
+
+* JSON周りのプラグインを作成
+* embulk-filter-to_json(2016/1/22)
+* embulk-filter-flatten_json(2015/10/11)
+* embulk-filter-json_key(2015/10/29)
+
+---
+
+## sonotsさん
+
+* embulk後の定番フィルターを作成
+* embulk-filter-row(2015/6/17)
+* embulk-filter-column(2015/6/23)
+* embulk-filter-timestamp_format(2016/3/19)
+* embulk-filter-typecast(2016/4/27)
+* embulk-output-bigqueryリライト
+* 等々
+
+
+---
+
+## その頃
+
+* embulk-parser-apache-log(2015/5/30)
+  * 誰も作ってくれなかったので仕方なく自分で
+* embulk-output-groonga(2015/12/6)
+  * 全文検索用Groonga用プラグイン
+* embulk-parser-sisimai(2016/2/18)
+  * バウンスメール解析sisimaiのパーサー
+
+---
+
+## イベント開催・RubyBizグランプリ
+
+* Embulk meetup Tokyo#2(2015/12/15)
+  * 
+* RubyBiz 第一回グランプリ受賞(Fluentd/Embulk)
+
+---
+
+## 様々な要望
+
+* 設定ファイルの共有化
+* ArrayやHashデーターの対応
+* ワークフロー連携
+
+--- 
+
+## 設定ファイル共有化:Liquid
+
+---
+
+## Array,Hash対応:type: json
+
+| Embulk    | 説明       | Ruby      | Java 
+|-----------|------------|-----------|------
+| boolean   | 真偽値     | Boolean   | Boolean
+| long      | 整数型     | Integer   | Long
+| timestamp | 時刻       | Time      | Timestamp
+| double    | 浮動小数点 | Float     | Double 
+| string    | 文字列     | String    | String 
+| json      | JSON       | *確認中*  | *確認中*
+
+---
+
+## ワークフロー:digdag
+
+
+---
+
+## その頃
+
+* Digdagプラグインのまとめ
+* embulk-filter-null_string(2016/8/19)
+* embulk-filter-calc(2016/8/19)
+* embulk-parser-jsonpath(2016/8/29)
+
+
+---
+
+##
+
+* 伊藤さんによるredash連携の紹介
+* Excelからのデータ読み込みが注目されるように
+
+---
+
+## 最近の改善
+
+* 複雑なブートストラップ
+  * .sh/.bat => Java(.jar) => JRuby(command line) => Java(EmbulkEmbed) => JRuby(plugin bootstrap) => Java/JRuby(per plugin)
+* タイムスタンプパースの速度問題
+  * JRubyパースの速度
+* REST clientプラグイン支援ライブラリ
+
+
+## これから
+
+* Java7 -> Java8
+* バイナリタイプ
+* Pure Java Plugin
+* Reporter Plugin [#700](https://github.com/embulk/embulk/pull/700)
+
+## その他
 
 ---
 
@@ -151,17 +307,6 @@ exec:
 
 
 ---
-
-## Embulk type
-
-| Embulk    | 説明       | Ruby      | Java 
-|-----------|------------|-----------|------
-| boolean   | 真偽値     | Boolean   | Boolean
-| long      | 整数型     | Integer   | Long
-| timestamp | 時刻       | Time      | Timestamp
-| double    | 浮動小数点 | Float     | Double 
-| string    | 文字列     | String    | String 
-| json      | JSON       | *確認中*  | *確認中*
 
 
 ---
