@@ -33,7 +33,6 @@ Hello, World!!
 
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
 
----?image=assets/images/EmbulkSummary.png&size=auto 70%
 
 ---
 
@@ -46,6 +45,8 @@ Hello, World!!
 | parser    | CSVデータのパース        |
 | filter    | データの加工不要行の抽出 |
 | exec      | バルクロード分散実行     |
+
+---
 
 ## Embulk Plugin type2
 
