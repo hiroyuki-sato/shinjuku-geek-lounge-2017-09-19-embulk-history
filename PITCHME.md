@@ -132,6 +132,10 @@ exec:
   * embulk-output-elasticsearch (2015/2/15)
   * embulk-input-s3 (2015/2/16)
 
+---?image=assets/images/EmbulkPCap1.png&size=auto 70%
+
+---?image=assets/images/EmbulkPCap2.png&size=auto 70%
+
 ---
 
 ## 直面する問題
