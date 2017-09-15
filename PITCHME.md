@@ -33,6 +33,17 @@ Hello, World!!
 
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
 
+---
+
+## Embulk
+
+* プラグインアーキテクチャ
+  * JRubyとJava(Scala/Kotlin)
+* 並行・並列処理
+* guess
+* リトライ・レジューム
+* yaml設定
+
 
 ---
 
@@ -119,6 +130,15 @@ exec:
   * embulk-plugin-input-pcapng-files (2015/1/28)
   * embulk-output-elasticsearch (2015/2/15)
   * embulk-input-s3 (2015/2/16)
+
+---
+
+## 直面する問題
+
+* このままでは、このソフトは使えない。
+* 今後一般的になりそう
+* 他の人がプラグインを作ってくれるのを待つ
+* ドキュメントぐらいなら..
 
 ---?image=assets/images/EmbulkSummary.png&size=auto 70%
 
@@ -329,6 +349,7 @@ out:
   * JRubyパースの速度
 * REST clientプラグイン支援ライブラリ
 
+---
 
 ## これから
 
@@ -338,17 +359,6 @@ out:
 * Reporter Plugin [#700](https://github.com/embulk/embulk/pull/700)
 
 ## その他
-
----
-
-## Embulk
-
-* プラグインアーキテクチャ
-  * JRubyとJava(Scala/Kotlin)
-* 並行・並列処理
-* guess
-* リトライ・レジューム
-* yaml設定
 
 ---
 
