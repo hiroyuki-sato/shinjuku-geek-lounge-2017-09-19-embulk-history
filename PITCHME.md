@@ -47,6 +47,8 @@ Hello, World!!
 
 ---
 
+---?image=assets/images/EmbulkPlugins2.png&size=auto 70%
+
 ## Embulk(Plugin type)
 
 | type      | 説明                     |
@@ -278,6 +280,11 @@ exec:
 * Embulk 0.7.7(2015/10/28)
 * 環境変数の読み込み可能に
 
+
+---
+
+## 設定ファイル共有化:Liquid
+
 ```yaml
 in: 
 {% if env.EMBULK_ENV == 'production' %}
@@ -289,10 +296,6 @@ in:
 out:
   type: stdout
 ```
-
----
-
-## 設定ファイル共有化:Liquid
 
 ```yaml
 #
