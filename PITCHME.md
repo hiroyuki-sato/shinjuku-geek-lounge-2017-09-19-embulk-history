@@ -33,9 +33,11 @@ Hello, World!!
 
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
 
+---?image=assets/images/EmbulkSummary.png&size=auto 70%
+
 ---
 
-## Embulk
+## Embulk(Plugin type)
 
 | type      | 説明                     |
 |-----------|--------------------------|
@@ -44,9 +46,15 @@ Hello, World!!
 | parser    | CSVデータのパース        |
 | filter    | データの加工不要行の抽出 |
 | exec      | バルクロード分散実行     |
+
+## Embulk Plugin type2
+
+| type      | 説明                     |
+|-----------|--------------------------|
 | formatter | データの整形(CSV)        |
 | encoder   | データの圧縮(gzip)       |
 | output    | データの出力(file,s3)    |
+
 
 ---
 
@@ -67,8 +75,9 @@ out:
   - type: gzip
 exec:
 ```
+
 ---
-  
+
 ## Embulk type
 
 | Embulk    | 説明       |
@@ -78,7 +87,6 @@ exec:
 | timestamp | 時刻       |
 | double    | 浮動小数点 |
 | string    | 文字列     |
-
 
 ---
 
@@ -146,7 +154,7 @@ exec:
 
 ---
 
-## 組込コマンドヘルプまとめ
+## 組込コマンドヘルプ
 
 * 2015/11/10
 * 未英訳
@@ -165,7 +173,7 @@ exec:
 
 ---
 
-# 様々な人々の貢献
+## 様々な人々の貢献
 
 ---
 
@@ -220,6 +228,8 @@ exec:
   * 全文検索用Groonga用プラグイン
 * embulk-parser-sisimai(2016/2/18)
   * バウンスメール解析sisimaiのパーサー
+
+---?image=assets/images/Groonga.png&size=auto 70%
 
 ---
 
