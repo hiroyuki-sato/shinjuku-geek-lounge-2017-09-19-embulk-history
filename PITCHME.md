@@ -44,10 +44,9 @@ Hello, World!!
 * リトライ・レジューム
 * yaml設定
 
+---?image=assets/images/EmbulkPlugins2.png&size=auto 70%
 
 ---
-
----?image=assets/images/EmbulkPlugins2.png&size=auto 70%
 
 ## Embulk(Plugin type)
 
@@ -337,10 +336,21 @@ out:
 
 ---
 
-##
+## 初めての雑誌掲載
 
-* 伊藤さんによるredash連携の紹介
-* Excelからのデータ読み込みが注目されるように
+* WEB+DB PRESS Vol.92(2016/4/23)
+* Embulkよるバッチデータ収集(古橋さん)
+* DeNAでのデータ収集(瀬尾さん)
+
+---
+
+## 一休CTO 伊藤さんの紹介
+
+* Web+DB PRESS Vol.94(2016/8/24)
+* OSSによるデータ分析基盤の構築
+  * Embulk, Re:dash, digdag
+* Rebuid#152
+  * Excelプラグイン脚光を浴びる
 
 ---
 
@@ -351,6 +361,7 @@ out:
 * タイムスタンプパースの速度問題
   * JRubyパースの速度
 * REST clientプラグイン支援ライブラリ
+  * embulk-base-restcilent
 
 ---
 
@@ -360,6 +371,9 @@ out:
 * バイナリタイプ
 * Pure Java Plugin
 * Reporter Plugin [#700](https://github.com/embulk/embulk/pull/700)
+  * ロードした件数などがわかるように
+
+---
 
 ## その他
 
