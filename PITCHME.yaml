@@ -1,9 +1,10 @@
 #theme: black
 theme: beige
+#theme: moon
 highlight: Darcula
 #highlight: mono-blue
 #highlight: vs
 
 
-vertical-center: false
+#vertical-center: false
 theme-override: assets/css/PITCHME.css
