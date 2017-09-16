@@ -1,16 +1,7 @@
 ---
 
-Hello, World!!
-
----
-
-## Test
-
-| a | b |
-|---|---|
-| a | b |
-| a | b |
-| a | b |
+# Hello, World!!
+### Hiroyuki Sato @hiroysato
 
 ---
 
