@@ -4,8 +4,7 @@
 ### 過去・現在、これから
 ### Hiroyuki Sato @hiroysato
 
-
----?image=assets/images/Embulk.png&size=auto 100%
+---?image=assets/images/Embulk.png&size=auto 70%
 
 ## Embulk(エンバルク)
 
