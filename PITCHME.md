@@ -182,6 +182,8 @@ exec:
 
 ---
 
+---?image=assets/images/EmbulkCmdRef.png&size=auto 70%
+
 ## 組込コマンドヘルプ
 
 * 2015/11/10
@@ -369,8 +371,9 @@ out:
   * embulk-base-restcilent
   * REST apiとの連携が容易に
 
+---
 
-## 最近の改善22 
+## 最近の改善2
 
 ---?image=assets/images/Timestamp.png&size=auto 50%
 
@@ -405,4 +408,9 @@ out:
   * 技術評論社
   * 2017年9月21日発売
   * ISBN 978-4-7741-9218-5
+
+---
+
+# Thank you!
+
 
