@@ -395,5 +395,14 @@ out:
 * Reporter Plugin [#700](https://github.com/embulk/embulk/pull/700)
   * ロードした件数などがわかるように
 
+---?image=assets/images/Book.png&size=auto 70%
+
 ---
+
+* データ分析基盤構築入門
+  * [Fluentd，Elasticsearch，Kibanaによるログ収集と可視化]
+  * Embulkプラグイン辞典付き
+  * 技術評論社
+  * 2017年9月21日発売
+  * ISBN 978-4-7741-9218-5
 
