@@ -14,9 +14,6 @@
   * 出力: PostgreSQL
 * Embulkを見つける => よさそう
 
-
----?image=assets/images/Embulk.png&size=auto
-
 ---
 
 ## Embulk(エンバルク)
