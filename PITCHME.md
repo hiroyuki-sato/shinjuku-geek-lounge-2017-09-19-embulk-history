@@ -350,8 +350,11 @@ out:
 ## その頃
 
 * embulk-filter-null_string(2016/8/19)
+  * ""をnullに変換
 * embulk-filter-calc(2016/8/19)
+  * 四則演算
 * embulk-parser-jsonpath(2016/8/29)
+  * jsonパーサー(Java)
 
 ---?image=assets/images/Digdag.png&size=auto 70%
 
