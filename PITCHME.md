@@ -1,13 +1,7 @@
-#HSLIDE
-
-## AnyCable
-### A polyglot replacement for <span style="color:#e49436">ActionCable</span> server
-
-
-
 ---
 
-# Hello, World!!
+# Embulkの歴史
+### 過去・現在、これから
 ### Hiroyuki Sato @hiroysato
 
 ---
@@ -65,6 +59,16 @@
 | formatter | データの整形(CSV)        |
 | encoder   | データの圧縮(gzip)       |
 | output    | データの出力(file,s3)    |
+
+
+---
+
+| Type     | Num| Type     |Num |
+|----------|----|----------|----|
+| Input    | 52 | Decoder  | 3  |
+| Output   | 47 | Filter   | 9  |
+| Filter   | 57 | Encoder  | 5  |
+| Parser   | 31 | Executor | 3  |
 
 
 ---
