@@ -9,6 +9,9 @@
 ---
 ## Embulk(エンバルク)
 
+![](assets/images/Embulk-logo-v1.png)
+![](assets/images/Embulk-logo-v2.png)
+
 ---
 
 ## Embulk(エンバルク)
