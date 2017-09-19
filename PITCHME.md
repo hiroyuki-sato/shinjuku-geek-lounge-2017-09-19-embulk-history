@@ -189,9 +189,10 @@ exec:
 * 組込プラグインの説明
 * ソースを見てドキュメント化
 
----
 
 ---?image=assets/images/EmbulkCmdRef.png&size=auto 70%
+
+---
 
 ## 組込コマンドヘルプ
 
