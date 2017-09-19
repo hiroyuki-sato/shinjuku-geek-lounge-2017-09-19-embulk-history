@@ -360,14 +360,30 @@ out:
 
 ---
 
-## 最近の改善
+## 最近の改善 1
 
 * 複雑なブートストラップ
   * .sh/.bat => Java(.jar) => JRuby(command line) => Java(EmbulkEmbed) => JRuby(plugin bootstrap) => Java/JRuby(per plugin)
-* タイムスタンプパースの速度問題
-  * JRubyパースの速度
+  * v0.8.21 ~ v0.8.32でJavaに書き直し
 * REST clientプラグイン支援ライブラリ
   * embulk-base-restcilent
+  * REST apiとの連携が容易に
+
+
+## 最近の改善22 
+
+---?image=assets/images/Timestamp.png&size=auto 70%
+
+---
+
+## TimeStampParserの速度改善
+
+* タイムスタンプパースの速度問題
+  * [原因調査](https://github.com/embulk/embulk/issues/145) JRuby遅い
+  * JRubyのTimestampParser JRuby -> Java
+  * Embulk 0.8.27での導入 2017/7/9
+  * 4倍以上の高速化
+  * JRubyでも取り込まれる予定(9.2.0.0)
 
 ---
 
@@ -481,17 +497,6 @@ password: xxx
 ## JRuby利用の弊害
 
 * 起動が遅い
-* ソースが複雑
-* 時刻のパースが遅い
-
----
-
-## TimeStampParserの速度改善
-
-* [原因調査](https://github.com/embulk/embulk/issues/145)
-* JRubyのTimestampParser JRuby -> Java
-* Embulk 0.8.27での導入 2017/7/9
-* 4倍以上の高速化
 * ソースが複雑
 * 時刻のパースが遅い
 
