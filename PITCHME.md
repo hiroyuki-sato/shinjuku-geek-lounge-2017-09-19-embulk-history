@@ -2,11 +2,23 @@
 
 # Embulkの歴史
 ### 過去・現在、これから
-### Hiroyuki Sato @hiroysato
+### 佐藤 博之 @hiroysato
+
+---
+
+## 2015年2月
+
+* バルクローダーが必要だった。
+* 要件
+  * 入力: apacheのログファイル
+  * 出力: PostgreSQL
+* Embulkを見つける => よさそう
+
 
 ---?image=assets/images/Embulk.png&size=auto
 
 ---
+
 ## Embulk(エンバルク)
 
 ![](assets/images/Embulk.png)
@@ -28,7 +40,8 @@
 * DBやストレージの移行
   * MySQL -> PostgreSQL
   * Local -> S3
-* 内製スクリプト
+* 日次バッチ処理内製スクリプト
+  * 実は誰かが書いたか分からないスクリプトがたまに失敗していて困る。
 
 ---?image=assets/images/embulk-architecture.png&size=auto 70%
 
@@ -70,7 +83,7 @@
 
 ---
 
-## プラグインの種類
+## プラグインの数
 
 | Type     | Num| Type     |Num |
 |----------|----|----------|----|
@@ -111,16 +124,6 @@ exec:
 | timestamp | 時刻       |
 | double    | 浮動小数点 |
 | string    | 文字列     |
-
----
-
-## その頃
-
-* 2015年2月、バルクローダーが必要だった。
-* 要件
-  * 入力: apacheのログファイル
-  * 出力: PostgreSQL
-* Embulkを見つける => よさそう
 
 ---
 
@@ -323,7 +326,6 @@ out:
   database: embulk_prod
 ```
 
-
 ---
 
 ## Array,Hash対応:type: json
@@ -341,16 +343,28 @@ out:
 
 ## ワークフロー:digdag
 
+* 2016/06/15登場
+* ワークフローエンジン
+* YAML(風)の記述で依存関係の記述ができる
+* ローカルモード・サーバーモードがある。
+  * ローカルでテスト、サーバで本番という作業ができる。
 
 ---
 
 ## その頃
 
-* Digdagプラグインのまとめ
 * embulk-filter-null_string(2016/8/19)
 * embulk-filter-calc(2016/8/19)
 * embulk-parser-jsonpath(2016/8/29)
 
+---?image=assets/images/Digdag.png&size=auto 70%
+
+## Digdagまとめ&プラグイン
+
+* Digdagプラグインのまとめ(2016/6/15~)
+* プラグイン作成
+  * digdag-plugin-ssh
+  * digdag-plugin-mysql
 
 ---
 
@@ -396,6 +410,12 @@ out:
 
 ---
 
+## smdmtsさん
+
+* EMRを使って大量のデータ処理
+* 様々なプラグインを作成
+* 詳しくはこの後
+
 ## これから
 
 * Java7 -> Java8
@@ -418,5 +438,4 @@ out:
 ---
 
 # Thank you!
-
 
