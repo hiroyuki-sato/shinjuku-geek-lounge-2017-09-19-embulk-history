@@ -372,7 +372,7 @@ out:
 
 ---
 
-## 最近の改善 1
+## 最近の改善
 
 * 複雑なブートストラップ
   * .sh/.bat => Java(.jar) => JRuby(command line) => Java(EmbulkEmbed) => JRuby(plugin bootstrap) => Java/JRuby(per plugin)
@@ -383,11 +383,9 @@ out:
 
 ---?image=assets/images/Timestamp.png&size=auto 50%
 
-## 最近の改善2
-
 ---
 
-## 最近の速度改善3
+## 最近の速度改善
 
 * タイムスタンプパースの速度問題
   * [原因調査](https://github.com/embulk/embulk/issues/145) JRuby遅い
