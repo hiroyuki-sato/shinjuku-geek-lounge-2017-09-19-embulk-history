@@ -381,15 +381,13 @@ out:
   * embulk-base-restcilent
   * REST apiとの連携が容易に
 
----
+---?image=assets/images/Timestamp.png&size=auto 50%
 
 ## 最近の改善2
 
----?image=assets/images/Timestamp.png&size=auto 50%
-
 ---
 
-## TimeStampParserの速度改善
+## 最近の速度改善3
 
 * タイムスタンプパースの速度問題
   * [原因調査](https://github.com/embulk/embulk/issues/145) JRuby遅い
