@@ -162,6 +162,7 @@ exec:
 
 ## Embulkのまとめ
 
+* http://qiita.com/hiroysato/items/397f36c4838a0a93e352
 * Embulkのまとめ(2015/2/16)
 * Embulk関連のリンク集
 * 国内最大の情報源に
@@ -174,6 +175,7 @@ exec:
 
 ## Embulkプラグインのまとめ
 
+* http://qiita.com/hiroysato/items/da45e52fb79c39547f69
 * 当初はEmbulkのまとめに掲載
 * リンクが増えたので独立
 * オフィシャルのプラグインページが公開(2015/2/26)
@@ -184,6 +186,7 @@ exec:
 
 ## 組み込みプラグイン覚書
 
+* http://qiita.com/hiroysato/items/a71669d3e5be2049c238
 * 組込プラグインの説明(2015/2/28)
 * 英訳してPR、本体のドキュメントベースに
 * 組込プラグインの説明
@@ -196,6 +199,7 @@ exec:
 
 ## 組込コマンドヘルプ
 
+* http://qiita.com/hiroysato/items/86ad1cdfb1754440eed5
 * 2015/11/10
 * 未英訳
 
@@ -441,4 +445,12 @@ out:
 ---
 
 # Thank you!
+
+---
+
+## 参考資料
+
+* [並列データ転送ツール『Embulk』リリース！](http://frsyuki.hatenablog.com/entry/2015/02/16/080150)
+* [Embulk, an open-source plugin-based parallel bulk data loader](https://www.slideshare.net/frsyuki/embuk-making-data-integration-works-relaxed)
+
 
